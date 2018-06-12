@@ -1,0 +1,202 @@
+body {
+  clear: both;
+  margin: 0px;
+}
+.header {
+  height: 150px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.float-l {
+  float: left;
+}
+.float-r {
+  float: right;
+}
+.logo-div {
+  float: left;
+  margin: 25px 10px 20px 10px;
+}
+.search {
+  float: right;
+  margin: 70px 100px 0px 10px;
+  border: 1px solid #e3e3e3;
+  height: 38px;
+  width: 370px;
+}
+.search div {
+  float: left;
+  margin: 7px 5px;
+}
+.search .text {
+  border: 0px;
+  height: 35px;
+  width: 265px;
+}
+.search .tips {
+  font-size: 12px;
+}
+.search .btn {
+  float: right;
+  height: 35px;
+  width: 67px;
+  background-color: #f99c38;
+}
+.titles {
+  background-color: #666666;
+  height: 60px;
+  padding-left: 300px;
+}
+.titles .main {
+  background-color: #f99c38;
+}
+.titles .title {
+  position: relative;
+  display: inline-block;
+  padding: 0px 20px;
+  height: 60px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+}
+.titles .title a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.titles .title:hover {
+  background-color: #f99c38;
+}
+.titles .title:hover .main {
+  background-color: #666666;
+}
+.drop-list:hover {
+  background-color: #f99c38;
+}
+.drop-list:hover .drop-menu-list {
+  display: block;
+}
+.drop-menu-list {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 60px;
+  background-color: rgba(102, 102, 102, 0.6);
+  color: white;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.drop-menu-list div {
+  text-decoration: none;
+}
+.drop-menu-list div:hover {
+  background-color: #f99c38;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+/*消除图片底部3像素距离*/
+img {
+  vertical-align: top;
+}
+.banner-box {
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+}
+.banner-box .list {
+  width: 1000%;
+  left: 0px;
+  top: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.banner-box .list li {
+  width: 10%;
+  overflow: hidden;
+  float: left;
+}
+.banner-box .list li img {
+  width: 100%;
+  height: 420px;
+  display: block;
+}
+.banner-box .list li :first-child {
+  display: block;
+}
+.banner-box .prev,
+.banner-box .next {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  text-align: center;
+  background-color: rgba(238, 238, 238, 0.5);
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+}
+.banner-box .next {
+  right: 0px;
+}
+.banner-box .banner-pages {
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}
+.banner-box .banner-pages span {
+  background-color: #eeeeee;
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 0px;
+  margin: 0px 10px;
+}
+.banner-box .banner-pages .on {
+  background-color: #f99c38;
+}
+.introdution {
+  background: url("../img/line.png");
+}
+.introdution .name {
+  margin: 10px auto;
+  width: 20%;
+  text-align: center;
+}
+.introdution .name:after,
+.introdution .name:before {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  bottom: 12px;
+}
+.introdution .name:before {
+  top: 15px;
+  left: 50%;
+}
+.introdution .name:after {
+  top: -15px;
+  right: -600px;
+}
+.introdution .news .imgs {
+  margin-left: 200px;
+  float: left;
+}
+.introdution .news .conts {
+  width: 556px;
+  float: left;
+  margin-left: 20px;
+}
+.introdution .news .conts .togo {
+  float: right;
+}

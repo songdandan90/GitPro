@@ -1,0 +1,208 @@
+body {
+    clear: both;
+    margin: 0px;
+}
+@tip-color : rgba(249,156,56,1);
+.header {
+    height: 150px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.float-l {
+    float: left;
+}
+.float-r {
+    float: right;
+}
+.logo-div {
+    .float-l;
+    margin: 25px 10px 20px 10px;
+}
+.search {
+    .float-r;
+    margin: 70px 100px 0px 10px;
+    border: 1px solid rgba(227,227,227,1);
+    height: 38px;
+    width: 370px;
+    div {
+        .float-l; 
+        margin: 7px 5px;
+    }
+    .text {
+        border: 0px;
+        height: 35px;
+        height: 35px;
+        width: 265px;
+    }
+    .tips {
+        font-size: 12px;
+    }
+    .btn {
+        float: right;
+        height: 35px;
+        width: 67px;
+        background-color: @tip-color;
+    }
+}
+.titles {
+    background-color: rgb(102, 102, 102);
+    height: 60px;
+    padding-left: 300px;
+    .main {
+        background-color: @tip-color;
+    }
+    .title {
+        position: relative;
+        display: inline-block;
+        padding: 0px 20px;
+        height: 60px;
+        font-size: 18px;
+        color: #fff;
+        line-height: 60px;
+        text-align: center;
+        a {
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+        &:hover {
+            background-color: @tip-color;
+            .main {
+                background-color: rgb(102, 102, 102);
+            }
+        }
+    }
+}
+.drop-list {
+    &:hover {
+        background-color: @tip-color;
+        .drop-menu-list {
+            display: block;
+        }
+    }
+}
+.drop-menu-list {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    background-color: rgba(102, 102, 102, 0.6);
+    color: white;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    div {
+        text-decoration: none;
+        &:hover {
+            background-color: @tip-color;
+        }
+    }
+    
+   
+}
+ul,ol{
+    list-style-type: none;
+}
+ul,li{
+    margin: 0px;
+    padding: 0px;
+}
+/*消除图片底部3像素距离*/
+img{
+    vertical-align: top;
+}
+.banner-box {
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+    .list {
+        width: 1000%;
+        left: 0px;
+        top: 0px;
+        position: relative;
+        overflow: hidden;
+        li {
+            width: 10%;
+            overflow: hidden;
+            .float-l;
+            img {
+                width: 100%;
+                height: 420px;
+                display: block;
+            }
+            :first-child {
+                display: block;
+            }
+        }
+    }
+    .prev,.next{
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+        text-align: center;
+        background-color: rgba(238, 238, 238, 0.5);
+        line-height: 100px;
+        position: absolute;
+        top: 50%;
+    }
+    .next {
+        right: 0px;
+    }
+    .banner-pages {
+        position: absolute;
+        top: 85%;
+        left: 45%;
+        span {
+            background-color: rgba(238, 238, 238, 1);
+            border-radius: 50%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            font-size: 0px;
+            margin: 0px 10px;
+        }
+        .on {
+            background-color: #f99c38;
+        }
+    }
+    
+}
+.introdution {
+    background: url("../img/line.png");
+    .name {
+        margin: 10px auto;
+        width: 20%;
+        text-align: center;
+        &:after,&:before {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 2px;
+            bottom: 12px;
+        }
+        &:before {
+            top: 15px;
+            left: 50%;
+        }
+        &:after {
+            top: -15px;
+            right: -600px;
+        }
+    }
+    .news {
+        .imgs {
+            margin-left: 200px;
+            float: left;
+        }
+        .conts {
+            width: 556px;
+            float: left;
+            margin-left: 20px; 
+            .togo {
+                .float-r;
+            }
+        }
+    }
+}
+
